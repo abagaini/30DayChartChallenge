@@ -7,7 +7,7 @@ library(hexbin)
 
 # DATA --------------------------------------------------------------------
 
-data <- read.csv("lepidosaur.csv")
+data <- read.csv("lepidosaur.csv") # renamed some columns but original dataset from https://onlinelibrary.wiley.com/doi/full/10.1111/geb.12398
 data$mass <- log(as.numeric(data$mass)) # transform
 data <- data %>% select(mass, Family)  # select relevant variables
 data$rand <- "rand"
