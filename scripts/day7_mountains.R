@@ -7,7 +7,7 @@ library(tidyverse)
 
 # DATA --------------------------------------------------------------------
 
-data <- read.csv("mountains.csv") # data from Wikipedia https://en.wikipedia.org/wiki/List_of_mountains_by_elevation
+data <- read.csv("day7_mountains.csv") # data from Wikipedia https://en.wikipedia.org/wiki/List_of_mountains_by_elevation
 data$metres <- as.numeric(sub(",", "", data$metres, fixed = TRUE))
 
 # PLOT --------------------------------------------------------------------
