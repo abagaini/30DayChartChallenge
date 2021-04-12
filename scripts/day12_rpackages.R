@@ -9,8 +9,13 @@ library(ggtext)
 # DATA --------------------------------------------------------------------
 
 cran_code <- readr::read_csv("https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2019/2019-11-12/loc_cran_packages.csv") # data 
-cran_code_g <- cran_code %>% filter(language =="R" & code > 100) %>% 
+cran_code_g <- cran_code %>% filter(language =="R" & code > 100) %>% # only R laguage & more than 100 lines of code
                                     group_by(code, pkg_name) %>% mutate(Frequency = n()) %>% ungroup() %>% distinct(code, Frequency,pkg_name)
+
+median(cran_code_g$code) #745
+sum(cran_code_g$code) # 22747653
+nrow(cran_code_g) # 13267
+
 cran_code_g <- rbind(cran_code_g,cran_code_g,cran_code_g,cran_code_g) # had to replicate data as lines are otherwise not very visible in the plot
 
 # PLOT --------------------------------------------------------------------
@@ -23,7 +28,7 @@ p <- ggplot(cran_code_g,
   labs(x = "# of lines of R code", 
        title = "Number of Lines of R Code in R Packages*", 
        subtitle =  "Number of packages: 13'267    ||   Total number of lines of R code: 22'747'653    ||   Median number of lines of R code: 745",
-       caption = "*selected packages with at least 100 lines of code \n Data from Philippe Massicotte & TidyTuesday | 30DayChartChallenge | @a_bagaini") +
+       caption = "*selected packages with at least 100 lines of R code \n Data from Philippe Massicotte & TidyTuesday | 30DayChartChallenge | @a_bagaini") +
   theme( legend.position = "none",
     axis.text.x = element_text(margin = margin(t = 5)),
     axis.title.x = element_text(face = "bold",margin = margin(t = 20, b = 40)),
