@@ -142,7 +142,3 @@ GLOBAL LEVEL", fill = "% electricity access",
 ggsave(p3, file="chartchall_d23_3.png", device="png",dpi = 400, width = 25, height = 15, units = "cm") # can adjust resolution
 
 
-
-ggsave(p3, file="chartchall_d23_3.png", device="png",dpi = 400, width = 25, height = 15, units = "cm") # can adjust resolution
-
-
