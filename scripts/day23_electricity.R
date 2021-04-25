@@ -117,8 +117,10 @@ p3 <- data_w   %>%
   ggplot(aes(y=country, x=Year, fill=access)) + 
   geom_tile(color="grey15", size=0.75) + 
   labs(caption = "Data from ourworldindata.org | #30DayChartChallenge | @a_bagaini",
-       title =  "TILE PLOT CLOSE UP", fill = "% electricity access",
-       subtitle = "ACCESS TO ELECTRICITY AT THE GLOBAL LEVEL") +
+       title =  
+"ACCESS TO ELECTRICITY AT THE
+GLOBAL LEVEL", fill = "% electricity access",
+       subtitle = "(1990 - 2016)") +
   theme_void () +
   theme(plot.background = element_rect(fill = "grey15"),
         legend.position = "top",
@@ -136,6 +138,10 @@ p3 <- data_w   %>%
   annotate(geom = "text", x = 1988, y = 1.5, label = "71.4% in 1990", size = 5, color = yellow, family = "Montserrat", vjust = "bottom", hjust = "left") +
   annotate(geom = "text", x = 2018, y = 1.5, label = "87.4% in 2016", size = 5, color = yellow, family = "Montserrat", vjust = "bottom", hjust = "right") +
   scale_fill_gradient(low = "grey15", high = yellow, limits = c(0,100))
+
+ggsave(p3, file="chartchall_d23_3.png", device="png",dpi = 400, width = 25, height = 15, units = "cm") # can adjust resolution
+
+
 
 ggsave(p3, file="chartchall_d23_3.png", device="png",dpi = 400, width = 25, height = 15, units = "cm") # can adjust resolution
 
