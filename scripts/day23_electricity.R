@@ -47,8 +47,8 @@ p1 <- data_c   %>%
 "These tile plots show the percentage of the population with access to electricity between 1990 & 2016 (data from 200 countries)\n
 At a global level, the percentage of people with access to electricity has been steadily increasing over the last few decades. In 1990, around 71% of the world's population had
 access; this has increased to 87% in 2016. In 1990, for quite a few countries, close to 100% of the population had access to electricity (e.g., European countries). However, looking
-at 2016, this was still far from being the case for certain countries, particularly in Sub-Saharan Africa (e.g., Togo). For countries, like Nepal or Bhutan, access to electricity
-has considerably increased over the years.\n
+at 2016, this was still far from being the case for certain countries, such as in Sub-Saharan Africa. For countries, like Nepal or Bhutan, access to electricity has considerably 
+increased over the years.\n
 INTERPRETING THE PLOTS: Each tile plot shows starting from 1990 (leftmost stripe) to 2016 (rightmost stripe), how the access to electricity in a country has changed.") +
   theme_void () +
   theme(plot.background = element_rect(fill = "grey15"),
@@ -87,8 +87,8 @@ p2 <- data_c   %>%
          "These tile plots show the percentage of the population with access to electricity between 1990 & 2016 (data from 200 countries)\n
 At a global level, the percentage of people with access to electricity has been steadily increasing over the last few decades. In 1990, around 71% of the world's population had
 access; this has increased to 87% in 2016. In 1990, for quite a few countries, close to 100% of the population had access to electricity (e.g., European countries). However, looking
-at 2016, this was still far from being the case for certain countries, particularly in Sub-Saharan Africa (e.g., Togo). For countries, like Nepal or Bhutan, access to electricity
-has considerably increased over the years.\n
+at 2016, this was still far from being the case for certain countries, such as in Sub-Saharan Africa. For countries, like Nepal or Bhutan, access to electricity has considerably 
+increased over the years.\n
 INTERPRETING THE PLOTS: Each tile plot shows starting from 1990 (leftmost stripe) to 2016 (rightmost stripe), how the access to electricity in a country has changed.") +
   theme_void () +
   theme(plot.background = element_rect(fill = "grey15"),
