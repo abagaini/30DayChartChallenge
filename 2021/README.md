@@ -1,6 +1,4 @@
 
-<img src="https://github.com/z3tt/30DayChartChallenge_Collection2021/blob/main/img/announcement_cat_5.png" width="1000">
-
 # Contributions to the #30DayChartChallenge 2021 Edition 
 ## Day 7. Distributions - Physical
 <img src="https://github.com/abagaini/30DayChartChallenge/blob/main/2021/day_7/day_7.png" width="1000">
