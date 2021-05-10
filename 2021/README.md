@@ -19,7 +19,7 @@
 <img src="https://github.com/abagaini/30DayChartChallenge/blob/main/2021/day_13/day_13.png" width="1000">
 
 ## Day 19. Time series - Global Change
- Up coming.....
+ <img src="https://github.com/abagaini/30DayChartChallenge/blob/main/2021/day_19/day_19.png" width="1000">
  
 ## Day 23. Time series - Tiles
 <img src="https://github.com/abagaini/30DayChartChallenge/blob/main/2021/day_23/day_23_1.png" width="1000">
