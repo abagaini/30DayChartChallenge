@@ -7,4 +7,4 @@ More information is available in the [main github repository](https://github.com
 ## 2021 Edition
 
 ### 30 days. 5 categories. 30 prompts 
-<img src="https://github.com/z3tt/30DayChartChallenge_Collection2021/blob/main/img/announcement_cat_5.png" width="1000">
+<img src="https://github.com/z3tt/30DayChartChallenge_Collection2021/blob/main/img/topics_ol_blank.png" width="1000">
